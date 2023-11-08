@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="px-5  z-50">
+        <div class="relative z-50 container h-20 mx-auto flex justify-between items-center">
+            <div class="font-black text-3xl">
+                Kourchal.
+            </div>
+            <div  class=" space-x-10 font-semibold hidden items-center md:flex md:flex-row uppercase">
+                <a href="">Home</a>
+                <a href="">Portfolio</a>
+                <a href="">About</a>
+                <a href="">Hire Me</a>
+            </div>
+            <div id="nav" class="bg-white shadow-lg absolute z-50 uppercase md:hidden left-0 right-0 top-20  h-[70vh]  hidden flex flex-col items-center justify-center text-3xl space-y-20 font-semibold">
+                <a href="" class="hover:tracking-widest hover:text-yellow-500 transition-all duration-200 ease-in-out">Home</a>
+                <a href="" class="hover:tracking-widest hover:text-yellow-500 transition-all duration-200 ease-in-out">Portfolio</a>
+                <a href="" class="hover:tracking-widest hover:text-yellow-500 transition-all duration-200 ease-in-out">About</a>
+                <a href="" class="hover:tracking-widest hover:text-yellow-500 transition-all duration-200 ease-in-out">Hire Me</a>
+            </div>
+            <div class="block md:hidden">
+                <button id="toggle"><i class='bx bx-menu-alt-right text-2xl hover:text-yellow-500'></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="h-[90vh] container mx-auto px-5 hero">
+        <div class="">
+            <div class="absolute top-0 right-0 left-0 -bottom-10 z-[-1]"><img src="./bg.png" alt=""></div>
+        </div>
+        <div class="flex justify-between items-center w-full h-full space-x-5">
+            <div class="space-y-5 w-full">
+                <div class="font-mono text-2xl font-light text-gray-400">print(“Hello, World!”)</div>
+                <div class="relative">
+                   
+                    <div class="relative z-[1] text-6xl font-extrabold">I'm MEHDI KOURCHAL <br> <span class="border-b-8 border-yellow-500 ">Front-End Developer</span></div>
+                </div>
+                <div class="font-mono text-2xl font-light text-gray-500">i am a junior front-end developer</div>
+                
+                <!-- Buttons -->
+                <div class="flex">
+                    <button class="bg-yellow-500 hover:shadow-2xl transition-all duration-200 ease-in-out hover:shadow-yellow-200 px-6 py-4 text-3xl font-bold rounded-lg"> Projects</button>
+                    <button class="px-5 py-3 text-2xl font-medium text-gray-500 flex items-center"><i class='bx bx-right-arrow-alt bx-fade-left px-2'></i> Hire Me</button>
+                </div>
+            </div>
+            <!-- image -->
+            <div class=" rounded-full h-full w-2/3 flex justify-center items-center"><img src="./Ellipse 1.png" alt=""></div>
+    </header>
+    <!-- Card Section -->
+    <section class=" px-5 space-y-10 h-[100vh]">
+        <h2 class="text-center text-5xl font-black">My Projects</h2>
+
+    </section>
+    <button id="showMoreButton" class="mx-auto flex justify-center my-32 bg-yellow-500 p-5 rounded-xl">Show More</button>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
